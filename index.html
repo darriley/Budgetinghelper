@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Advanced Budgeting</title>
+</head>
+<body>
+  <header>
+    <h1> Budgeting Website</h1>
+  </header>
+  <main>
+    <section id="budget-form">
+      <label for="income">Income:</label>
+      <input type="number" id="income" placeholder="Enter your monthly income">
+
+      <label for="expenses">Expenses:</label>
+      <div id="expense-list">
+        <div class="expense-input">
+          <input type="text" class="expense-name" placeholder="Expense name">
+          <input type="number" class="expense-amount" placeholder="Amount">
+        </div>
+      </div>
+
+      <button onclick="addExpense()">Add Expense</button>
+      <button onclick="calculateBudget()">Calculate Budget</button>
+      <button onclick="clearBudgetBreakdowns()">Clear Budget Breakdowns</button>
+    </section>
+
+    <section id="budget-result">
+      <h2>Your Budget Breakdown:</h2>
+      <ul id="budget-breakdown"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
